@@ -1,0 +1,412 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IEscrow",
+  "sourceName": "contracts/IEscrow.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "summonedTime",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "nextSummonTime",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "summonerId",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "assistantId",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "summons",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "maxSummons",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct IHero.SummoningInfo",
+              "name": "summoningInfo",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "statGenes",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "visualGenes",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "rarity",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "shiny",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "generation",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "firstName",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "lastName",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "shinyStyle",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "class",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "subClass",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct IHero.Info",
+              "name": "info",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "staminaFullAt",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "hpFullAt",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "mpFullAt",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "level",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "xp",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "address",
+                  "name": "currentQuest",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "sp",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "status",
+                  "type": "uint8"
+                }
+              ],
+              "internalType": "struct IHero.State",
+              "name": "state",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint16",
+                  "name": "strength",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "intelligence",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "wisdom",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "luck",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "agility",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "vitality",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "endurance",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "dexterity",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "hp",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "mp",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "stamina",
+                  "type": "uint16"
+                }
+              ],
+              "internalType": "struct IHero.Stats",
+              "name": "stats",
+              "type": "tuple"
+            }
+          ],
+          "internalType": "struct IHero.HeroObject",
+          "name": "_hero",
+          "type": "tuple"
+        }
+      ],
+      "name": "calculate_protocol_fee",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "get_gold_balance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "get_jewel_balance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "hero1_level",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "hero2_level",
+          "type": "uint256"
+        }
+      ],
+      "name": "hero_level_matching",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_gold_amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_type",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "_toggle",
+          "type": "bool"
+        }
+      ],
+      "name": "lock_unlock_gold_from_battle",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_jewel_amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_type",
+          "type": "uint256"
+        }
+      ],
+      "name": "lock_unlock_jewel_from_battle",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "protocol_fee",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "winner",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "loser",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_gold_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer_gold_from_loser_to_winner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_jewel_amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "_toggle",
+          "type": "bool"
+        }
+      ],
+      "name": "transfer_jewel_to_owner_post_battle",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

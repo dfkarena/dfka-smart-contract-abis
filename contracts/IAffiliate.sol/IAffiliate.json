@@ -1,0 +1,65 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IAffiliate",
+  "sourceName": "contracts/IAffiliate.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "get_affiliate_owner",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "referrer",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "promo_code",
+              "type": "string"
+            },
+            {
+              "internalType": "bool",
+              "name": "signed_up",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct IAffiliate.new_account",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "promo_code_used",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "num_gold",
+          "type": "uint256"
+        }
+      ],
+      "name": "increment_referral_earnings",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
